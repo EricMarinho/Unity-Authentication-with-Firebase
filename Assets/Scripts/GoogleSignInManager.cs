@@ -14,7 +14,7 @@ public class GoogleSignInManager : MonoBehaviour
 {
     public Text infoText;
     private bool IsLink = false;
-    public string webClientId = "231884747474-8t5s47m1iotadabo5ac8c7p6re803gih.apps.googleusercontent.com";
+    public string webClientId = "You Web Client Id";
 
     private GoogleSignInConfiguration configuration;
 
@@ -22,13 +22,13 @@ public class GoogleSignInManager : MonoBehaviour
     {
         configuration = new GoogleSignInConfiguration { WebClientId = webClientId, RequestEmail = true, RequestIdToken = true };
         if (PlayerPrefs.GetString("current_access_token") == "google_access_token")
-            StartCoroutine(WaitForInitialization());;
+            StartCoroutine(WaitForInitialization()); ;
     }
 
-    public void SignInWithGoogle() 
+    public void SignInWithGoogle()
     {
         IsLink = false;
-        OnSignIn(); 
+        OnSignIn();
     }
     public void SignOutFromGoogle() { OnSignOut(); }
     public void LinkWithGoogle()
@@ -86,7 +86,8 @@ public class GoogleSignInManager : MonoBehaviour
             AddToInformation("Email = " + task.Result.Email);
             AddToInformation("Google ID Token = " + task.Result.IdToken);
             AddToInformation("Email = " + task.Result.Email);
-            if (!IsLink) {
+            if (!IsLink)
+            {
                 SignInWithGoogleOnFirebase(task.Result.IdToken);
             }
             else
