@@ -19,7 +19,7 @@ Follow the below instructions to get started:
 6. Open Project in VS Code.
 7. Copy the Web API ID from google sign-in methods to the Google Sign In Script
 
-For Facebook Sign-in create a developer account and start a new app, then add a new plataform to the app on the facebook developer console and fill the informations.
+For Facebook Sign-in, create a developer account and start a new app, then add a new plataform to the app on the facebook developer console and fill the informations.
 Then find the FacebookSettings on the Unity project and fill it with the facebook developer app informations. Also you will need to download [OpenSSL](https://code.google.com/archive/p/openssl-for-windows/downloads) and copy the bin folder to the java/bin folder.
 
 ## Requirements
