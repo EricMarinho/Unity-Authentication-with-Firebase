@@ -14,9 +14,9 @@ Follow the below instructions to get started:
 1. [Make sure you have all Requirements](#requirements)
 2. Create an account in [google firebase](https://firebase.google.com) and create a new project
 3. Create a Unity App and start the Authentication.
-4. On the new app, add the fingerprints that you can get by using this command on the prompt from inside the java/bin folder: keytool -keystore path-to-debug-or-production-keystore -list -v
-5. [Download Source Code](#download)
-6. Open Project in VS Code.
+4. [Download Source Code](#download)
+5. Create a new keystore on the Unity project
+6. On the new app, add the fingerprints that you can get by using this command on the prompt from inside the java/bin folder: keytool -keystore path-to-debug-or-production-keystore -list -v
 7. Copy the Web API ID from google sign-in methods to the Google Sign In Script
 
 For Facebook Sign-in, create a developer account and start a new app, then add a new plataform to the app on the facebook developer console and fill the informations.
